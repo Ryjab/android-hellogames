@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DescriptionAct">
+
+    <TextView
+            android:text="GAME INFO"
+            android:layout_width="192dp"
+            android:layout_height="46dp"
+            android:id="@+id/title" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" tools:ignore="MissingConstraints"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.017"
+            tools:text="GAME INFO"
+            android:textSize="24sp" android:textColor="@color/bleu" android:textStyle="bold"
+            android:textAllCaps="false" android:visibility="visible" android:lineSpacingExtra="8sp"
+            android:gravity="center"/>
+    <ImageView
+            android:layout_width="148dp"
+            android:layout_height="146dp" tools:srcCompat="@tools:sample/avatars[0]"
+            android:id="@+id/JeuxImage"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp" android:layout_marginBottom="256dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/title"
+            android:background="@color/bleu"
+            app:layout_constraintVertical_bias="0.769"/>
+    <TextView
+            android:text="Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Name"
+            tools:text="Name"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="38dp"
+            app:layout_constraintTop_toBottomOf="@+id/title" app:layout_constraintStart_toEndOf="@+id/JeuxImage"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginBottom="7dp"
+            app:layout_constraintBottom_toTopOf="@+id/Type"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintVertical_chainStyle="spread_inside" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.006" android:textStyle="bold"/>
+    <TextView
+            android:text="Type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Type"
+            tools:ignore="MissingConstraints" tools:text="Type"
+            android:layout_marginTop="11dp"
+            app:layout_constraintTop_toBottomOf="@+id/Name"
+            android:layout_marginBottom="22dp"
+            app:layout_constraintBottom_toTopOf="@+id/NBPlayers" android:layout_marginEnd="158dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="158dp"
+            app:layout_constraintStart_toEndOf="@+id/JeuxImage" android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp" android:textStyle="bold" app:layout_constraintHorizontal_bias="0.071"/>
+    <TextView
+            android:text="NBplayers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NBPlayers"
+            tools:ignore="MissingConstraints,UnknownId" tools:text="NBplayers"
+            android:layout_marginTop="14dp"
+            app:layout_constraintTop_toBottomOf="@+id/Type"
+            android:layout_marginBottom="7dp"
+            app:layout_constraintBottom_toTopOf="@+id/Year" app:layout_constraintStart_toEndOf="@+id/JeuxImage"
+            android:layout_marginStart="8dp" android:layout_marginLeft="8dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.0" android:textStyle="bold"/>
+    <TextView
+            android:text="Year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Year"
+            app:layout_constraintStart_toEndOf="@+id/JeuxImage" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" tools:ignore="MissingConstraints" tools:text="Year"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/NBPlayers"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="@+id/JeuxImage"
+            android:textStyle="bold"/>
+    <Button
+            android:text="Button"
+            android:layout_width="255dp"
+            android:layout_height="43dp"
+            android:id="@+id/button" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+            android:text="Description_En"
+            android:layout_width="260dp"
+            android:layout_height="140dp"
+            android:id="@+id/JeuxDescription" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginBottom="34dp"
+            app:layout_constraintBottom_toTopOf="@+id/button" android:layout_marginTop="31dp"
+            app:layout_constraintTop_toBottomOf="@+id/JeuxImage"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NameV"
+            app:layout_constraintTop_toTopOf="@+id/Name" app:layout_constraintBottom_toBottomOf="@+id/Name"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TypeV"
+            app:layout_constraintTop_toTopOf="@+id/Type" app:layout_constraintBottom_toBottomOf="@+id/Type"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NBplayersV"
+            app:layout_constraintTop_toTopOf="@+id/NBPlayers" app:layout_constraintBottom_toBottomOf="@+id/NBPlayers"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/YearV"
+            app:layout_constraintTop_toTopOf="@+id/Year" app:layout_constraintBottom_toBottomOf="@+id/Year"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"/>
+</android.support.constraint.ConstraintLayout>
